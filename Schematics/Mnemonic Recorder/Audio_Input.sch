@@ -1,0 +1,271 @@
+EESchema Schematic File Version 4
+LIBS:Mnemonic Recorder-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 4
+Title "Audio Input"
+Date ""
+Rev "v. 1.0"
+Comp "Heartless Audio Devices"
+Comment1 ""
+Comment2 "https://creativecommons.org/licenses/by-sa/4.0/"
+Comment3 "License: CC BY-SA"
+Comment4 "Author: Thomas Museus Dabay"
+$EndDescr
+$Comp
+L Amplifier_Operational:TL072 U201
+U 3 1 5D477326
+P 5950 3100
+F 0 "U201" H 5908 3146 50  0001 L CNN
+F 1 "TL072" H 5908 3055 50  0001 L CNN
+F 2 "" H 5950 3100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 5950 3100 50  0001 C CNN
+	3    5950 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:TL072 U201
+U 1 1 5D4749B6
+P 5950 3100
+F 0 "U201" H 6000 3450 50  0000 C CNN
+F 1 "TL072" H 6000 3350 50  0000 C CNN
+F 2 "" H 5950 3100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 5950 3100 50  0001 C CNN
+	1    5950 3100
+	1    0    0    1   
+$EndComp
+$Comp
+L power:+12V #PWR0204
+U 1 1 5D487E3B
+P 5850 2700
+F 0 "#PWR0204" H 5850 2550 50  0001 C CNN
+F 1 "+12V" H 5865 2873 50  0000 C CNN
+F 2 "" H 5850 2700 50  0001 C CNN
+F 3 "" H 5850 2700 50  0001 C CNN
+	1    5850 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:AudioJack2_SwitchT J201
+U 1 1 5D4717AD
+P 2250 3000
+F 0 "J201" H 2071 2933 50  0000 R CNN
+F 1 "AudioJack2_SwitchT" H 2071 3024 50  0000 R CNN
+F 2 "" H 2250 3000 50  0001 C CNN
+F 3 "~" H 2250 3000 50  0001 C CNN
+	1    2250 3000
+	1    0    0    1   
+$EndComp
+$Comp
+L power:Earth #PWR0201
+U 1 1 5D48A369
+P 2700 3300
+F 0 "#PWR0201" H 2700 3050 50  0001 C CNN
+F 1 "Earth" H 2700 3150 50  0001 C CNN
+F 2 "" H 2700 3300 50  0001 C CNN
+F 3 "~" H 2700 3300 50  0001 C CNN
+	1    2700 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R201
+U 1 1 5D48B28F
+P 3900 3000
+F 0 "R201" V 3695 3000 50  0000 C CNN
+F 1 "100k" V 3786 3000 50  0000 C CNN
+F 2 "" V 3940 2990 50  0001 C CNN
+F 3 "~" H 3900 3000 50  0001 C CNN
+	1    3900 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R204
+U 1 1 5D48BEC0
+P 5850 1700
+F 0 "R204" V 5645 1700 50  0000 C CNN
+F 1 "10k" V 5736 1700 50  0000 C CNN
+F 2 "" V 5890 1690 50  0001 C CNN
+F 3 "~" H 5850 1700 50  0001 C CNN
+	1    5850 1700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R202
+U 1 1 5D48CDF9
+P 4100 3950
+F 0 "R202" V 3895 3950 50  0000 C CNN
+F 1 "10k" V 3986 3950 50  0000 C CNN
+F 2 "" V 4140 3940 50  0001 C CNN
+F 3 "~" H 4100 3950 50  0001 C CNN
+	1    4100 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R203
+U 1 1 5D48D20D
+P 4700 4500
+F 0 "R203" H 4632 4454 50  0000 R CNN
+F 1 "2.2k" H 4632 4545 50  0000 R CNN
+F 2 "" V 4740 4490 50  0001 C CNN
+F 3 "~" H 4700 4500 50  0001 C CNN
+	1    4700 4500
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3.3V #PWR0202
+U 1 1 5D48E15F
+P 3650 3800
+F 0 "#PWR0202" H 3650 3650 50  0001 C CNN
+F 1 "+3.3V" H 3665 3973 50  0000 C CNN
+F 2 "" H 3650 3800 50  0001 C CNN
+F 3 "" H 3650 3800 50  0001 C CNN
+	1    3650 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0206
+U 1 1 5D48E900
+P 7750 2400
+F 0 "#PWR0206" H 7750 2250 50  0001 C CNN
+F 1 "+3.3V" H 7765 2573 50  0000 C CNN
+F 2 "" H 7750 2400 50  0001 C CNN
+F 3 "" H 7750 2400 50  0001 C CNN
+	1    7750 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0207
+U 1 1 5D48F02B
+P 7750 3800
+F 0 "#PWR0207" H 7750 3550 50  0001 C CNN
+F 1 "Earth" H 7750 3650 50  0001 C CNN
+F 2 "" H 7750 3800 50  0001 C CNN
+F 3 "~" H 7750 3800 50  0001 C CNN
+	1    7750 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C201
+U 1 1 5D48FA9A
+P 5850 2200
+F 0 "C201" V 5598 2200 50  0000 C CNN
+F 1 "20pF" V 5689 2200 50  0000 C CNN
+F 2 "" H 5888 2050 50  0001 C CNN
+F 3 "~" H 5850 2200 50  0001 C CNN
+	1    5850 2200
+	0    1    1    0   
+$EndComp
+$Comp
+L Diode:1N914 D201
+U 1 1 5D490664
+P 7750 2750
+F 0 "D201" V 7704 2829 50  0000 L CNN
+F 1 "1N914" V 7795 2829 50  0000 L CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 7750 2575 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 7750 2750 50  0001 C CNN
+	1    7750 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L Diode:1N914 D202
+U 1 1 5D4975B8
+P 7750 3450
+F 0 "D202" V 7704 3529 50  0000 L CNN
+F 1 "1N914" V 7795 3529 50  0000 L CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 7750 3275 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 7750 3450 50  0001 C CNN
+	1    7750 3450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2450 3100 2700 3100
+Wire Wire Line
+	2700 3100 2700 3300
+Wire Wire Line
+	2450 3000 3750 3000
+Wire Wire Line
+	3650 3800 3650 3950
+Wire Wire Line
+	3650 3950 3950 3950
+$Comp
+L power:Earth #PWR0203
+U 1 1 5D4ADE40
+P 4700 4900
+F 0 "#PWR0203" H 4700 4650 50  0001 C CNN
+F 1 "Earth" H 4700 4750 50  0001 C CNN
+F 2 "" H 4700 4900 50  0001 C CNN
+F 3 "~" H 4700 4900 50  0001 C CNN
+	1    4700 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 4900 4700 4650
+Wire Wire Line
+	4700 4350 4700 3950
+Wire Wire Line
+	4700 3950 4250 3950
+Wire Wire Line
+	5650 3200 4700 3200
+Wire Wire Line
+	4700 3200 4700 3950
+Connection ~ 4700 3950
+NoConn ~ 6050 3600
+Wire Wire Line
+	5850 3400 5850 3500
+Wire Wire Line
+	5850 2800 5850 2700
+Wire Wire Line
+	6250 3100 6650 3100
+Wire Wire Line
+	6000 2200 6650 2200
+Wire Wire Line
+	6650 2200 6650 3100
+Wire Wire Line
+	6000 1700 6650 1700
+Wire Wire Line
+	6650 1700 6650 2200
+Connection ~ 6650 2200
+Wire Wire Line
+	4050 3000 5050 3000
+Wire Wire Line
+	5700 2200 5050 2200
+Wire Wire Line
+	5050 2200 5050 3000
+Connection ~ 5050 3000
+Wire Wire Line
+	5050 3000 5650 3000
+Wire Wire Line
+	5700 1700 5050 1700
+Wire Wire Line
+	5050 1700 5050 2200
+Connection ~ 5050 2200
+Wire Wire Line
+	7750 3100 7750 3300
+Wire Wire Line
+	7750 2900 7750 3100
+Connection ~ 7750 3100
+Wire Wire Line
+	7750 2600 7750 2400
+Wire Wire Line
+	7750 3600 7750 3800
+Text HLabel 8950 3100 2    50   Input ~ 0
+AudioIn
+Wire Wire Line
+	7750 3100 8950 3100
+$Comp
+L power:-12V #PWR0205
+U 1 1 5D49252F
+P 5850 3500
+F 0 "#PWR0205" H 5850 3600 50  0001 C CNN
+F 1 "-12V" H 5865 3673 50  0000 C CNN
+F 2 "" H 5850 3500 50  0001 C CNN
+F 3 "" H 5850 3500 50  0001 C CNN
+	1    5850 3500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7750 3100 6650 3100
+Connection ~ 6650 3100
+$EndSCHEMATC

@@ -1,0 +1,249 @@
+EESchema Schematic File Version 4
+LIBS:Mnemonic Recorder-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 4
+Title "Audio Output"
+Date ""
+Rev "v. 1.0"
+Comp "Heartless Audio Devices"
+Comment1 ""
+Comment2 "https://creativecommons.org/licenses/by-sa/4.0/"
+Comment3 "License: CC BY-SA"
+Comment4 "Author: Thomas Museus Dabay"
+$EndDescr
+$Comp
+L Amplifier_Operational:TL072 U201
+U 2 1 5D543206
+P 5650 3650
+F 0 "U201" H 5700 3300 50  0000 C CNN
+F 1 "TL072" H 5700 3400 50  0000 C CNN
+F 2 "" H 5650 3650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 5650 3650 50  0001 C CNN
+	2    5650 3650
+	1    0    0    1   
+$EndComp
+$Comp
+L Amplifier_Operational:TL072 U401
+U 3 1 5D543FC8
+P 5650 3650
+F 0 "U401" H 5608 3696 50  0001 L CNN
+F 1 "TL072" H 5608 3605 50  0001 L CNN
+F 2 "" H 5650 3650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 5650 3650 50  0001 C CNN
+	3    5650 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:AudioJack2_SwitchT J401
+U 1 1 5D541253
+P 9500 3650
+F 0 "J401" H 9320 3583 50  0000 R CNN
+F 1 "AudioJack2_SwitchT" H 9320 3674 50  0000 R CNN
+F 2 "" H 9500 3650 50  0001 C CNN
+F 3 "~" H 9500 3650 50  0001 C CNN
+	1    9500 3650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:CP1 C401
+U 1 1 5D54C83B
+P 6900 3650
+F 0 "C401" V 7152 3650 50  0000 C CNN
+F 1 "10uF" V 7061 3650 50  0000 C CNN
+F 2 "" H 6900 3650 50  0001 C CNN
+F 3 "~" H 6900 3650 50  0001 C CNN
+	1    6900 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R401
+U 1 1 5D54D989
+P 2950 3550
+F 0 "R401" V 2745 3550 50  0000 C CNN
+F 1 "47k" V 2836 3550 50  0000 C CNN
+F 2 "" V 2990 3540 50  0001 C CNN
+F 3 "~" H 2950 3550 50  0001 C CNN
+	1    2950 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R402
+U 1 1 5D54E584
+P 3550 3050
+F 0 "R402" H 3482 3004 50  0000 R CNN
+F 1 "33k" H 3482 3095 50  0000 R CNN
+F 2 "" V 3590 3040 50  0001 C CNN
+F 3 "~" H 3550 3050 50  0001 C CNN
+	1    3550 3050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_US R404
+U 1 1 5D54F314
+P 4200 3750
+F 0 "R404" V 4300 3750 50  0000 C CNN
+F 1 "11k" V 4400 3750 50  0000 C CNN
+F 2 "" V 4240 3740 50  0001 C CNN
+F 3 "~" H 4200 3750 50  0001 C CNN
+	1    4200 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R405
+U 1 1 5D54F7FA
+P 4800 4250
+F 0 "R405" H 4732 4204 50  0000 R CNN
+F 1 "68k" H 4732 4295 50  0000 R CNN
+F 2 "" V 4840 4240 50  0001 C CNN
+F 3 "~" H 4800 4250 50  0001 C CNN
+	1    4800 4250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_US R406
+U 1 1 5D54FD67
+P 5550 2500
+F 0 "R406" V 5345 2500 50  0000 C CNN
+F 1 "68k" V 5436 2500 50  0000 C CNN
+F 2 "" V 5590 2490 50  0001 C CNN
+F 3 "~" H 5550 2500 50  0001 C CNN
+	1    5550 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR0131
+U 1 1 5D550A6D
+P 2350 3400
+F 0 "#PWR0131" H 2350 3250 50  0001 C CNN
+F 1 "+3.3V" H 2365 3573 50  0000 C CNN
+F 2 "" H 2350 3400 50  0001 C CNN
+F 3 "" H 2350 3400 50  0001 C CNN
+	1    2350 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0133
+U 1 1 5D553B0A
+P 4800 4600
+F 0 "#PWR0133" H 4800 4350 50  0001 C CNN
+F 1 "Earth" H 4800 4450 50  0001 C CNN
+F 2 "" H 4800 4600 50  0001 C CNN
+F 3 "~" H 4800 4600 50  0001 C CNN
+	1    4800 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0134
+U 1 1 5D5543F1
+P 3300 2750
+F 0 "#PWR0134" H 3300 2500 50  0001 C CNN
+F 1 "Earth" H 3300 2600 50  0001 C CNN
+F 2 "" H 3300 2750 50  0001 C CNN
+F 3 "~" H 3300 2750 50  0001 C CNN
+	1    3300 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0135
+U 1 1 5D55557A
+P 9050 3950
+F 0 "#PWR0135" H 9050 3700 50  0001 C CNN
+F 1 "Earth" H 9050 3800 50  0001 C CNN
+F 2 "" H 9050 3950 50  0001 C CNN
+F 3 "~" H 9050 3950 50  0001 C CNN
+	1    9050 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 3950 9050 3750
+Wire Wire Line
+	9050 3750 9300 3750
+Wire Wire Line
+	7050 3650 9300 3650
+Wire Wire Line
+	6750 3650 6350 3650
+Wire Wire Line
+	5550 3950 5550 4050
+$Comp
+L power:+12V #PWR0136
+U 1 1 5D579AF9
+P 5550 3250
+F 0 "#PWR0136" H 5550 3100 50  0001 C CNN
+F 1 "+12V" H 5565 3423 50  0000 C CNN
+F 2 "" H 5550 3250 50  0001 C CNN
+F 3 "" H 5550 3250 50  0001 C CNN
+	1    5550 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 3250 5550 3350
+Wire Wire Line
+	5700 2500 6350 2500
+Wire Wire Line
+	6350 2500 6350 3650
+Connection ~ 6350 3650
+Wire Wire Line
+	6350 3650 5950 3650
+Wire Wire Line
+	4800 4400 4800 4600
+Wire Wire Line
+	4350 3750 4800 3750
+Wire Wire Line
+	4800 4100 4800 3750
+Connection ~ 4800 3750
+Wire Wire Line
+	4800 3750 5350 3750
+$Comp
+L Device:R_US R403
+U 1 1 5D54EC82
+P 4200 3550
+F 0 "R403" V 3995 3550 50  0000 C CNN
+F 1 "11k" V 4086 3550 50  0000 C CNN
+F 2 "" V 4240 3540 50  0001 C CNN
+F 3 "~" H 4200 3550 50  0001 C CNN
+	1    4200 3550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4350 3550 4800 3550
+Wire Wire Line
+	2350 3400 2350 3550
+Wire Wire Line
+	2350 3550 2800 3550
+Wire Wire Line
+	3100 3550 3550 3550
+Wire Wire Line
+	3300 2750 3550 2750
+Wire Wire Line
+	3550 2750 3550 2900
+Wire Wire Line
+	3550 3200 3550 3550
+Connection ~ 3550 3550
+Wire Wire Line
+	3550 3550 4050 3550
+Text HLabel 1950 3750 0    50   Input ~ 0
+AudioOut
+Wire Wire Line
+	1950 3750 4050 3750
+Wire Wire Line
+	5400 2500 4800 2500
+Wire Wire Line
+	4800 2500 4800 3550
+Connection ~ 4800 3550
+Wire Wire Line
+	4800 3550 5350 3550
+$Comp
+L power:-12V #PWR0301
+U 1 1 5D494FA8
+P 5550 4050
+F 0 "#PWR0301" H 5550 4150 50  0001 C CNN
+F 1 "-12V" H 5565 4223 50  0000 C CNN
+F 2 "" H 5550 4050 50  0001 C CNN
+F 3 "" H 5550 4050 50  0001 C CNN
+	1    5550 4050
+	-1   0    0    1   
+$EndComp
+$EndSCHEMATC

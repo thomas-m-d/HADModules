@@ -1,0 +1,216 @@
+EESchema Schematic File Version 4
+LIBS:Preset Manager-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R_POT_US RV201
+U 1 1 5D9BD348
+P 2300 3400
+F 0 "RV201" H 2233 3446 50  0000 R CNN
+F 1 "R_POT_US" H 2233 3355 50  0000 R CNN
+F 2 "" H 2300 3400 50  0001 C CNN
+F 3 "~" H 2300 3400 50  0001 C CNN
+	1    2300 3400
+	1    0    0    -1  
+$EndComp
+Text HLabel 2700 3400 2    50   Input ~ 0
+SmallPot1
+$Comp
+L Device:R_POT_US RV203
+U 1 1 5D9BE399
+P 4600 3400
+F 0 "RV203" H 4533 3446 50  0000 R CNN
+F 1 "R_POT_US" H 4533 3355 50  0000 R CNN
+F 2 "" H 4600 3400 50  0001 C CNN
+F 3 "~" H 4600 3400 50  0001 C CNN
+	1    4600 3400
+	1    0    0    -1  
+$EndComp
+Text HLabel 5000 3400 2    50   Input ~ 0
+SmallPot2
+$Comp
+L Device:R_POT_US RV205
+U 1 1 5D9BFB2C
+P 6800 3400
+F 0 "RV205" H 6733 3446 50  0000 R CNN
+F 1 "R_POT_US" H 6733 3355 50  0000 R CNN
+F 2 "" H 6800 3400 50  0001 C CNN
+F 3 "~" H 6800 3400 50  0001 C CNN
+	1    6800 3400
+	1    0    0    -1  
+$EndComp
+Text HLabel 7200 3400 2    50   Input ~ 0
+SmallPot3
+$Comp
+L Device:R_POT_US RV207
+U 1 1 5D9BFB37
+P 9200 3400
+F 0 "RV207" H 9133 3446 50  0000 R CNN
+F 1 "R_POT_US" H 9133 3355 50  0000 R CNN
+F 2 "" H 9200 3400 50  0001 C CNN
+F 3 "~" H 9200 3400 50  0001 C CNN
+	1    9200 3400
+	1    0    0    -1  
+$EndComp
+Text HLabel 9600 3400 2    50   Input ~ 0
+SmallPot4
+$Comp
+L Device:R_POT_US RV202
+U 1 1 5D9C80D2
+P 3350 4400
+F 0 "RV202" H 3283 4446 50  0000 R CNN
+F 1 "R_POT_US" H 3283 4355 50  0000 R CNN
+F 2 "" H 3350 4400 50  0001 C CNN
+F 3 "~" H 3350 4400 50  0001 C CNN
+	1    3350 4400
+	1    0    0    -1  
+$EndComp
+Text HLabel 3750 4400 2    50   Input ~ 0
+LargePot1
+$Comp
+L Device:R_POT_US RV204
+U 1 1 5D9C80DD
+P 5650 4400
+F 0 "RV204" H 5583 4446 50  0000 R CNN
+F 1 "R_POT_US" H 5583 4355 50  0000 R CNN
+F 2 "" H 5650 4400 50  0001 C CNN
+F 3 "~" H 5650 4400 50  0001 C CNN
+	1    5650 4400
+	1    0    0    -1  
+$EndComp
+Text HLabel 6050 4400 2    50   Input ~ 0
+SlewPot
+$Comp
+L Device:R_POT_US RV206
+U 1 1 5D9C80E8
+P 7850 4400
+F 0 "RV206" H 7783 4446 50  0000 R CNN
+F 1 "R_POT_US" H 7783 4355 50  0000 R CNN
+F 2 "" H 7850 4400 50  0001 C CNN
+F 3 "~" H 7850 4400 50  0001 C CNN
+	1    7850 4400
+	1    0    0    -1  
+$EndComp
+Text HLabel 8250 4400 2    50   Input ~ 0
+LargePot2
+$Comp
+L power:+3.3V #PWR0201
+U 1 1 5D9D45CF
+P 6150 2500
+F 0 "#PWR0201" H 6150 2350 50  0001 C CNN
+F 1 "+3.3V" H 6165 2673 50  0000 C CNN
+F 2 "" H 6150 2500 50  0001 C CNN
+F 3 "" H 6150 2500 50  0001 C CNN
+	1    6150 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 3250 2300 2700
+Wire Wire Line
+	6150 2700 6150 2500
+Wire Wire Line
+	9200 3250 9200 2700
+Connection ~ 6150 2700
+Wire Wire Line
+	6800 3250 6800 2700
+Connection ~ 6800 2700
+Wire Wire Line
+	6800 2700 6150 2700
+Wire Wire Line
+	4600 3250 4600 2700
+Wire Wire Line
+	3350 4250 3350 2700
+Wire Wire Line
+	5650 4250 5650 2700
+Connection ~ 5650 2700
+Wire Wire Line
+	5650 2700 6150 2700
+Connection ~ 4600 2700
+Wire Wire Line
+	4600 2700 5650 2700
+Wire Wire Line
+	3350 2700 4600 2700
+Wire Wire Line
+	2300 2700 3350 2700
+Connection ~ 3350 2700
+Wire Wire Line
+	7850 4250 7850 2700
+Connection ~ 7850 2700
+Wire Wire Line
+	6800 2700 7850 2700
+Wire Wire Line
+	7850 2700 9200 2700
+$Comp
+L power:Earth #PWR0202
+U 1 1 5D9ECA94
+P 6150 5250
+F 0 "#PWR0202" H 6150 5000 50  0001 C CNN
+F 1 "Earth" H 6150 5100 50  0001 C CNN
+F 2 "" H 6150 5250 50  0001 C CNN
+F 3 "~" H 6150 5250 50  0001 C CNN
+	1    6150 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 4550 5650 5050
+Wire Wire Line
+	5650 5050 6150 5050
+Wire Wire Line
+	6150 5050 6150 5250
+Wire Wire Line
+	7850 4550 7850 5050
+Wire Wire Line
+	7850 5050 6800 5050
+Connection ~ 6150 5050
+Wire Wire Line
+	3350 4550 3350 5050
+Wire Wire Line
+	3350 5050 4600 5050
+Connection ~ 5650 5050
+Wire Wire Line
+	4600 3550 4600 5050
+Connection ~ 4600 5050
+Wire Wire Line
+	4600 5050 5650 5050
+Wire Wire Line
+	6800 3550 6800 5050
+Connection ~ 6800 5050
+Wire Wire Line
+	6800 5050 6150 5050
+Wire Wire Line
+	9200 3550 9200 5050
+Wire Wire Line
+	9200 5050 7850 5050
+Connection ~ 7850 5050
+Wire Wire Line
+	2300 3550 2300 5050
+Wire Wire Line
+	2300 5050 3350 5050
+Connection ~ 3350 5050
+Wire Wire Line
+	2450 3400 2700 3400
+Wire Wire Line
+	3500 4400 3750 4400
+Wire Wire Line
+	4750 3400 5000 3400
+Wire Wire Line
+	5800 4400 6050 4400
+Wire Wire Line
+	6950 3400 7200 3400
+Wire Wire Line
+	8000 4400 8250 4400
+Wire Wire Line
+	9350 3400 9600 3400
+$EndSCHEMATC
