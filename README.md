@@ -13,9 +13,9 @@ found in the [SourceCode](https://github.com/thomas-m-d/HADModules/tree/master/S
 # Modules
 Resources for the following modules are included in this repo
 
-## Mnemonic
+### Mnemonic
 4 channel sampler module that lets you record short audio clips, trigger each channel individually, and play all 4
 channels back on a common output. 
 
-## Pathway
+### Pathway
 6 channel sequencer/preset manager module with slew control between steps.
