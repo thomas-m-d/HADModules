@@ -1,0 +1,666 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 2200 4450 0    50   Input ~ 0
+Feedback1
+Text HLabel 2350 3650 0    50   Input ~ 0
+FBPot1
+Text HLabel 4200 4550 2    50   Input ~ 0
+FBAmped1
+$Comp
+L Audio:AS3360 U?
+U 2 1 5E845523
+P 3300 4450
+F 0 "U?" H 3500 4950 50  0000 C CNN
+F 1 "AS3360" H 3500 4850 50  0000 C CNN
+F 2 "" H 4000 3750 50  0001 C CNN
+F 3 "http://www.alfarzpp.lv/eng/sc/AS3360.pdf" H 3950 3800 50  0001 C CNN
+	2    3300 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5E846994
+P 3300 4050
+F 0 "#PWR?" H 3300 3900 50  0001 C CNN
+F 1 "+12V" H 3315 4223 50  0000 C CNN
+F 2 "" H 3300 4050 50  0001 C CNN
+F 3 "" H 3300 4050 50  0001 C CNN
+	1    3300 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-12V #PWR?
+U 1 1 5E846AE5
+P 3300 4950
+F 0 "#PWR?" H 3300 5050 50  0001 C CNN
+F 1 "-12V" H 3315 5123 50  0000 C CNN
+F 2 "" H 3300 4950 50  0001 C CNN
+F 3 "" H 3300 4950 50  0001 C CNN
+	1    3300 4950
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:Earth #PWR?
+U 1 1 5E846E32
+P 3400 4850
+F 0 "#PWR?" H 3400 4600 50  0001 C CNN
+F 1 "Earth" H 3400 4700 50  0001 C CNN
+F 2 "" H 3400 4850 50  0001 C CNN
+F 3 "~" H 3400 4850 50  0001 C CNN
+	1    3400 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 4950 3300 4850
+Wire Wire Line
+	2200 4450 2400 4450
+$Comp
+L Device:R_US R?
+U 1 1 5E854A8F
+P 3900 4800
+F 0 "R?" H 3968 4846 50  0000 L CNN
+F 1 "47k" H 3968 4755 50  0000 L CNN
+F 2 "" V 3940 4790 50  0001 C CNN
+F 3 "~" H 3900 4800 50  0001 C CNN
+	1    3900 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR?
+U 1 1 5E862CE3
+P 3900 5050
+F 0 "#PWR?" H 3900 4800 50  0001 C CNN
+F 1 "Earth" H 3900 4900 50  0001 C CNN
+F 2 "" H 3900 5050 50  0001 C CNN
+F 3 "~" H 3900 5050 50  0001 C CNN
+	1    3900 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 5050 3900 4950
+Wire Wire Line
+	3700 4550 3900 4550
+Wire Wire Line
+	3900 4650 3900 4550
+Connection ~ 3900 4550
+Wire Wire Line
+	3900 4550 4200 4550
+$Comp
+L Diode:1N914 D?
+U 1 1 5E86E918
+P 2550 3500
+F 0 "D?" V 2450 3250 50  0000 L CNN
+F 1 "1N914" V 2550 3200 50  0000 L CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 2550 3325 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 2550 3500 50  0001 C CNN
+	1    2550 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L Diode:1N914 D?
+U 1 1 5E86F1AF
+P 2550 3800
+F 0 "D?" V 2550 3550 50  0000 L CNN
+F 1 "1N914" V 2650 3500 50  0000 L CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 2550 3625 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 2550 3800 50  0001 C CNN
+	1    2550 3800
+	0    1    1    0   
+$EndComp
+Text GLabel 2450 3250 0    50   Input ~ 0
+Vref1
+$Comp
+L power:Earth #PWR?
+U 1 1 5E87C7FD
+P 2550 3950
+F 0 "#PWR?" H 2550 3700 50  0001 C CNN
+F 1 "Earth" H 2550 3800 50  0001 C CNN
+F 2 "" H 2550 3950 50  0001 C CNN
+F 3 "~" H 2550 3950 50  0001 C CNN
+	1    2550 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 4250 2900 4250
+$Comp
+L Device:R_US R?
+U 1 1 5E84F97B
+P 2550 4450
+F 0 "R?" V 2345 4450 50  0000 C CNN
+F 1 "47k" V 2436 4450 50  0000 C CNN
+F 2 "" V 2590 4440 50  0001 C CNN
+F 3 "~" H 2550 4450 50  0001 C CNN
+	1    2550 4450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2700 4450 2900 4450
+Wire Wire Line
+	2350 3650 2550 3650
+Connection ~ 2550 3650
+Wire Wire Line
+	2550 3650 2800 3650
+Wire Wire Line
+	2450 3250 2550 3250
+Wire Wire Line
+	2550 3250 2550 3350
+Wire Wire Line
+	2800 3650 2800 4250
+Text HLabel 6900 3150 0    50   Input ~ 0
+Input2
+Text HLabel 7250 5550 0    50   Input ~ 0
+Feedback2
+Text HLabel 7400 2350 0    50   Input ~ 0
+InPot2
+Text HLabel 7400 4750 0    50   Input ~ 0
+FBPot2
+Text HLabel 9250 3250 2    50   Input ~ 0
+InAmped2
+Text HLabel 9250 5650 2    50   Input ~ 0
+FBAmped2
+$Comp
+L Audio:AS3360 U?
+U 1 1 5E8D3629
+P 8350 3150
+F 0 "U?" H 8550 3650 50  0000 C CNN
+F 1 "AS3360" H 8550 3550 50  0000 C CNN
+F 2 "" H 9050 2450 50  0001 C CNN
+F 3 "http://www.alfarzpp.lv/eng/sc/AS3360.pdf" H 9000 2500 50  0001 C CNN
+	1    8350 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Audio:AS3360 U?
+U 2 1 5E8D3633
+P 8350 5550
+F 0 "U?" H 8550 6050 50  0000 C CNN
+F 1 "AS3360" H 8550 5950 50  0000 C CNN
+F 2 "" H 9050 4850 50  0001 C CNN
+F 3 "http://www.alfarzpp.lv/eng/sc/AS3360.pdf" H 9000 4900 50  0001 C CNN
+	2    8350 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5E8D363D
+P 8350 2750
+F 0 "#PWR?" H 8350 2600 50  0001 C CNN
+F 1 "+12V" H 8365 2923 50  0000 C CNN
+F 2 "" H 8350 2750 50  0001 C CNN
+F 3 "" H 8350 2750 50  0001 C CNN
+	1    8350 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-12V #PWR?
+U 1 1 5E8D3647
+P 8350 3650
+F 0 "#PWR?" H 8350 3750 50  0001 C CNN
+F 1 "-12V" H 8365 3823 50  0000 C CNN
+F 2 "" H 8350 3650 50  0001 C CNN
+F 3 "" H 8350 3650 50  0001 C CNN
+	1    8350 3650
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5E8D3651
+P 8350 5150
+F 0 "#PWR?" H 8350 5000 50  0001 C CNN
+F 1 "+12V" H 8365 5323 50  0000 C CNN
+F 2 "" H 8350 5150 50  0001 C CNN
+F 3 "" H 8350 5150 50  0001 C CNN
+	1    8350 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-12V #PWR?
+U 1 1 5E8D365B
+P 8350 6050
+F 0 "#PWR?" H 8350 6150 50  0001 C CNN
+F 1 "-12V" H 8365 6223 50  0000 C CNN
+F 2 "" H 8350 6050 50  0001 C CNN
+F 3 "" H 8350 6050 50  0001 C CNN
+	1    8350 6050
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:Earth #PWR?
+U 1 1 5E8D3665
+P 8450 5950
+F 0 "#PWR?" H 8450 5700 50  0001 C CNN
+F 1 "Earth" H 8450 5800 50  0001 C CNN
+F 2 "" H 8450 5950 50  0001 C CNN
+F 3 "~" H 8450 5950 50  0001 C CNN
+	1    8450 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 6050 8350 5950
+Wire Wire Line
+	8350 3550 8350 3650
+$Comp
+L power:Earth #PWR?
+U 1 1 5E8D3671
+P 8450 3550
+F 0 "#PWR?" H 8450 3300 50  0001 C CNN
+F 1 "Earth" H 8450 3400 50  0001 C CNN
+F 2 "" H 8450 3550 50  0001 C CNN
+F 3 "~" H 8450 3550 50  0001 C CNN
+	1    8450 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5E8D367B
+P 7250 3150
+F 0 "R?" V 7045 3150 50  0000 C CNN
+F 1 "47k" V 7136 3150 50  0000 C CNN
+F 2 "" V 7290 3140 50  0001 C CNN
+F 3 "~" H 7250 3150 50  0001 C CNN
+	1    7250 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5E8D3685
+P 8950 3500
+F 0 "R?" H 9018 3546 50  0000 L CNN
+F 1 "47k" H 9018 3455 50  0000 L CNN
+F 2 "" V 8990 3490 50  0001 C CNN
+F 3 "~" H 8950 3500 50  0001 C CNN
+	1    8950 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 3150 7100 3150
+Wire Wire Line
+	7250 5550 7450 5550
+$Comp
+L Device:R_US R?
+U 1 1 5E8D3691
+P 8950 5900
+F 0 "R?" H 9018 5946 50  0000 L CNN
+F 1 "47k" H 9018 5855 50  0000 L CNN
+F 2 "" V 8990 5890 50  0001 C CNN
+F 3 "~" H 8950 5900 50  0001 C CNN
+	1    8950 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR?
+U 1 1 5E8D369B
+P 8950 3750
+F 0 "#PWR?" H 8950 3500 50  0001 C CNN
+F 1 "Earth" H 8950 3600 50  0001 C CNN
+F 2 "" H 8950 3750 50  0001 C CNN
+F 3 "~" H 8950 3750 50  0001 C CNN
+	1    8950 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 3750 8950 3650
+Wire Wire Line
+	8750 3250 8950 3250
+Wire Wire Line
+	8950 3350 8950 3250
+Connection ~ 8950 3250
+Wire Wire Line
+	8950 3250 9250 3250
+$Comp
+L power:Earth #PWR?
+U 1 1 5E8D36AA
+P 8950 6150
+F 0 "#PWR?" H 8950 5900 50  0001 C CNN
+F 1 "Earth" H 8950 6000 50  0001 C CNN
+F 2 "" H 8950 6150 50  0001 C CNN
+F 3 "~" H 8950 6150 50  0001 C CNN
+	1    8950 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 6150 8950 6050
+Wire Wire Line
+	8750 5650 8950 5650
+Wire Wire Line
+	8950 5750 8950 5650
+Connection ~ 8950 5650
+Wire Wire Line
+	8950 5650 9250 5650
+$Comp
+L Diode:1N914 D?
+U 1 1 5E8D36B9
+P 7600 4600
+F 0 "D?" V 7500 4350 50  0000 L CNN
+F 1 "1N914" V 7600 4300 50  0000 L CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 7600 4425 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 7600 4600 50  0001 C CNN
+	1    7600 4600
+	0    1    1    0   
+$EndComp
+$Comp
+L Diode:1N914 D?
+U 1 1 5E8D36C3
+P 7600 4900
+F 0 "D?" V 7600 4650 50  0000 L CNN
+F 1 "1N914" V 7700 4600 50  0000 L CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 7600 4725 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 7600 4900 50  0001 C CNN
+	1    7600 4900
+	0    1    1    0   
+$EndComp
+Text GLabel 7750 3250 0    50   Input ~ 0
+Vref2
+$Comp
+L Device:C C?
+U 1 1 5E8D36CE
+P 7850 3500
+F 0 "C?" H 7965 3546 50  0000 L CNN
+F 1 "C" H 7965 3455 50  0000 L CNN
+F 2 "" H 7888 3350 50  0001 C CNN
+F 3 "~" H 7850 3500 50  0001 C CNN
+	1    7850 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR?
+U 1 1 5E8D36D8
+P 7850 3750
+F 0 "#PWR?" H 7850 3500 50  0001 C CNN
+F 1 "Earth" H 7850 3600 50  0001 C CNN
+F 2 "" H 7850 3750 50  0001 C CNN
+F 3 "~" H 7850 3750 50  0001 C CNN
+	1    7850 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 3750 7850 3650
+Wire Wire Line
+	7850 3350 7850 3250
+Wire Wire Line
+	7850 3250 7950 3250
+Wire Wire Line
+	7850 3250 7750 3250
+Connection ~ 7850 3250
+Text GLabel 7500 4350 0    50   Input ~ 0
+Vref2
+$Comp
+L power:Earth #PWR?
+U 1 1 5E8D36E8
+P 7600 5050
+F 0 "#PWR?" H 7600 4800 50  0001 C CNN
+F 1 "Earth" H 7600 4900 50  0001 C CNN
+F 2 "" H 7600 5050 50  0001 C CNN
+F 3 "~" H 7600 5050 50  0001 C CNN
+	1    7600 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 5350 7950 5350
+$Comp
+L Device:R_US R?
+U 1 1 5E8D36F3
+P 7600 5550
+F 0 "R?" V 7395 5550 50  0000 C CNN
+F 1 "47k" V 7486 5550 50  0000 C CNN
+F 2 "" V 7640 5540 50  0001 C CNN
+F 3 "~" H 7600 5550 50  0001 C CNN
+	1    7600 5550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7750 5550 7950 5550
+Wire Wire Line
+	7400 4750 7600 4750
+Connection ~ 7600 4750
+Wire Wire Line
+	7600 4750 7850 4750
+Wire Wire Line
+	7500 4350 7600 4350
+Wire Wire Line
+	7600 4350 7600 4450
+Wire Wire Line
+	7850 4750 7850 5350
+Wire Wire Line
+	7400 3150 7950 3150
+$Comp
+L Diode:1N914 D?
+U 1 1 5E8D3705
+P 7600 2200
+F 0 "D?" V 7500 1950 50  0000 L CNN
+F 1 "1N914" V 7600 1900 50  0000 L CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 7600 2025 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 7600 2200 50  0001 C CNN
+	1    7600 2200
+	0    1    1    0   
+$EndComp
+$Comp
+L Diode:1N914 D?
+U 1 1 5E8D370F
+P 7600 2500
+F 0 "D?" V 7600 2250 50  0000 L CNN
+F 1 "1N914" V 7700 2200 50  0000 L CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 7600 2325 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 7600 2500 50  0001 C CNN
+	1    7600 2500
+	0    1    1    0   
+$EndComp
+Text GLabel 7500 1950 0    50   Input ~ 0
+Vref2
+$Comp
+L power:Earth #PWR?
+U 1 1 5E8D371A
+P 7600 2650
+F 0 "#PWR?" H 7600 2400 50  0001 C CNN
+F 1 "Earth" H 7600 2500 50  0001 C CNN
+F 2 "" H 7600 2650 50  0001 C CNN
+F 3 "~" H 7600 2650 50  0001 C CNN
+	1    7600 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 2950 7950 2950
+Wire Wire Line
+	7400 2350 7600 2350
+Connection ~ 7600 2350
+Wire Wire Line
+	7600 2350 7850 2350
+Wire Wire Line
+	7500 1950 7600 1950
+Wire Wire Line
+	7600 1950 7600 2050
+Wire Wire Line
+	7850 2350 7850 2950
+Wire Wire Line
+	2800 1350 2800 1950
+Wire Wire Line
+	2550 950  2550 1050
+Wire Wire Line
+	2450 950  2550 950 
+Wire Wire Line
+	2550 1350 2800 1350
+Connection ~ 2550 1350
+Wire Wire Line
+	2350 1350 2550 1350
+Wire Wire Line
+	2800 1950 2900 1950
+$Comp
+L power:Earth #PWR?
+U 1 1 5E8A16D4
+P 2550 1650
+F 0 "#PWR?" H 2550 1400 50  0001 C CNN
+F 1 "Earth" H 2550 1500 50  0001 C CNN
+F 2 "" H 2550 1650 50  0001 C CNN
+F 3 "~" H 2550 1650 50  0001 C CNN
+	1    2550 1650
+	1    0    0    -1  
+$EndComp
+Text GLabel 2450 950  0    50   Input ~ 0
+Vref1
+$Comp
+L Diode:1N914 D?
+U 1 1 5E8A16C9
+P 2550 1500
+F 0 "D?" V 2550 1250 50  0000 L CNN
+F 1 "1N914" V 2650 1200 50  0000 L CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 2550 1325 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 2550 1500 50  0001 C CNN
+	1    2550 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L Diode:1N914 D?
+U 1 1 5E8A16BF
+P 2550 1200
+F 0 "D?" V 2450 950 50  0000 L CNN
+F 1 "1N914" V 2550 900 50  0000 L CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 2550 1025 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 2550 1200 50  0001 C CNN
+	1    2550 1200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2350 2150 2900 2150
+Connection ~ 2800 2250
+Wire Wire Line
+	2800 2250 2700 2250
+Wire Wire Line
+	2800 2250 2900 2250
+Wire Wire Line
+	2800 2350 2800 2250
+Wire Wire Line
+	2800 2750 2800 2650
+$Comp
+L power:Earth #PWR?
+U 1 1 5E87480D
+P 2800 2750
+F 0 "#PWR?" H 2800 2500 50  0001 C CNN
+F 1 "Earth" H 2800 2600 50  0001 C CNN
+F 2 "" H 2800 2750 50  0001 C CNN
+F 3 "~" H 2800 2750 50  0001 C CNN
+	1    2800 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E8743AC
+P 2800 2500
+F 0 "C?" H 2915 2546 50  0000 L CNN
+F 1 "C" H 2915 2455 50  0000 L CNN
+F 2 "" H 2838 2350 50  0001 C CNN
+F 3 "~" H 2800 2500 50  0001 C CNN
+	1    2800 2500
+	1    0    0    -1  
+$EndComp
+Text GLabel 2700 2250 0    50   Input ~ 0
+Vref1
+Wire Wire Line
+	3900 2250 4200 2250
+Connection ~ 3900 2250
+Wire Wire Line
+	3900 2350 3900 2250
+Wire Wire Line
+	3700 2250 3900 2250
+Wire Wire Line
+	3900 2750 3900 2650
+$Comp
+L power:Earth #PWR?
+U 1 1 5E861C1E
+P 3900 2750
+F 0 "#PWR?" H 3900 2500 50  0001 C CNN
+F 1 "Earth" H 3900 2600 50  0001 C CNN
+F 2 "" H 3900 2750 50  0001 C CNN
+F 3 "~" H 3900 2750 50  0001 C CNN
+	1    3900 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 2150 2050 2150
+$Comp
+L Device:R_US R?
+U 1 1 5E84A9B8
+P 3900 2500
+F 0 "R?" H 3968 2546 50  0000 L CNN
+F 1 "47k" H 3968 2455 50  0000 L CNN
+F 2 "" V 3940 2490 50  0001 C CNN
+F 3 "~" H 3900 2500 50  0001 C CNN
+	1    3900 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5E84930F
+P 2200 2150
+F 0 "R?" V 1995 2150 50  0000 C CNN
+F 1 "47k" V 2086 2150 50  0000 C CNN
+F 2 "" V 2240 2140 50  0001 C CNN
+F 3 "~" H 2200 2150 50  0001 C CNN
+	1    2200 2150
+	0    1    1    0   
+$EndComp
+$Comp
+L power:Earth #PWR?
+U 1 1 5E8490C3
+P 3400 2550
+F 0 "#PWR?" H 3400 2300 50  0001 C CNN
+F 1 "Earth" H 3400 2400 50  0001 C CNN
+F 2 "" H 3400 2550 50  0001 C CNN
+F 3 "~" H 3400 2550 50  0001 C CNN
+	1    3400 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 2550 3300 2650
+$Comp
+L power:-12V #PWR?
+U 1 1 5E846804
+P 3300 2650
+F 0 "#PWR?" H 3300 2750 50  0001 C CNN
+F 1 "-12V" H 3315 2823 50  0000 C CNN
+F 2 "" H 3300 2650 50  0001 C CNN
+F 3 "" H 3300 2650 50  0001 C CNN
+	1    3300 2650
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5E84663B
+P 3300 1750
+F 0 "#PWR?" H 3300 1600 50  0001 C CNN
+F 1 "+12V" H 3315 1923 50  0000 C CNN
+F 2 "" H 3300 1750 50  0001 C CNN
+F 3 "" H 3300 1750 50  0001 C CNN
+	1    3300 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Audio:AS3360 U?
+U 1 1 5E844CC0
+P 3300 2150
+F 0 "U?" H 3500 2650 50  0000 C CNN
+F 1 "AS3360" H 3500 2550 50  0000 C CNN
+F 2 "" H 4000 1450 50  0001 C CNN
+F 3 "http://www.alfarzpp.lv/eng/sc/AS3360.pdf" H 3950 1500 50  0001 C CNN
+	1    3300 2150
+	1    0    0    -1  
+$EndComp
+Text HLabel 4200 2250 2    50   Input ~ 0
+InAmped1
+Text HLabel 2350 1350 0    50   Input ~ 0
+InPot1
+Text HLabel 1850 2150 0    50   Input ~ 0
+Input1
+$EndSCHEMATC
