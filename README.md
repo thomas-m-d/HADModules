@@ -9,3 +9,13 @@ using KiCAD (see https://www.kicad-pcb.org/).
 Note that all source code is being licensed under the **GNU GPLv3** license and all schematics are being licensed under
 the **Create Commons Attribution-ShareAlike** 4.0 International Public License. The text of these licenses can be
 found in the [SourceCode](https://github.com/thomas-m-d/HADModules/tree/master/SourceCode) and [Schematics](https://github.com/thomas-m-d/HADModules/tree/master/Schematics) directories of this repo, respectively.
+
+# Modules
+Resources for the following modules are included in this repo
+
+### Mnemonic
+4 channel sampler module that lets you record short audio clips, trigger each channel individually, and play all 4
+channels back on a common output. 
+
+### Pathway
+6 channel sequencer/preset manager module with slew control between steps.
