@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 4
+Sheet 2 4
 Title ""
 Date ""
 Rev ""
@@ -22,10 +22,10 @@ InSteppedDown1
 Text HLabel 3900 4350 2    50   Input ~ 0
 FBSteppedDown1
 $Comp
-L Amplifier_Operational:TL072 U?
+L Amplifier_Operational:TL072 U202
 U 1 1 5E554342
 P 3250 1850
-F 0 "U?" H 3350 1600 50  0000 C CNN
+F 0 "U202" H 3350 1600 50  0000 C CNN
 F 1 "TL072" H 3350 1700 50  0000 C CNN
 F 2 "" H 3250 1850 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 3250 1850 50  0001 C CNN
@@ -33,10 +33,10 @@ F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 3250 1850 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L Amplifier_Operational:TL072 U?
+L Amplifier_Operational:TL072 U202
 U 2 1 5E5546EC
 P 3250 4350
-F 0 "U?" H 3350 4100 50  0000 C CNN
+F 0 "U202" H 3350 4100 50  0000 C CNN
 F 1 "TL072" H 3350 4200 50  0000 C CNN
 F 2 "" H 3250 4350 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 3250 4350 50  0001 C CNN
@@ -44,10 +44,10 @@ F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 3250 4350 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L Amplifier_Operational:TL072 U?
+L Amplifier_Operational:TL072 U302
 U 3 1 5E554BFE
 P 3250 4350
-F 0 "U?" H 3300 4200 50  0000 L CNN
+F 0 "U302" H 3300 4200 50  0000 L CNN
 F 1 "TL072" H 3250 4100 50  0000 L CNN
 F 2 "" H 3250 4350 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 3250 4350 50  0001 C CNN
@@ -55,10 +55,10 @@ F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 3250 4350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Amplifier_Operational:TL072 U?
+L Amplifier_Operational:TL072 U301
 U 3 1 5E55AF7D
 P 3250 1850
-F 0 "U?" H 3300 1700 50  0000 L CNN
+F 0 "U301" H 3300 1700 50  0000 L CNN
 F 1 "TL072" H 3250 1600 50  0000 L CNN
 F 2 "" H 3250 1850 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 3250 1850 50  0001 C CNN
@@ -66,10 +66,10 @@ F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 3250 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_US R?
+L Device:R_US R303
 U 1 1 5E56CB01
 P 3250 1200
-F 0 "R?" V 3045 1200 50  0000 C CNN
+F 0 "R303" V 3045 1200 50  0000 C CNN
 F 1 "1k" V 3136 1200 50  0000 C CNN
 F 2 "" V 3290 1190 50  0001 C CNN
 F 3 "~" H 3250 1200 50  0001 C CNN
@@ -77,10 +77,10 @@ F 3 "~" H 3250 1200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_US R?
+L Device:R_US R301
 U 1 1 5E56D173
 P 2500 1750
-F 0 "R?" V 2295 1750 50  0000 C CNN
+F 0 "R301" V 2295 1750 50  0000 C CNN
 F 1 "4k" V 2386 1750 50  0000 C CNN
 F 2 "" V 2540 1740 50  0001 C CNN
 F 3 "~" H 2500 1750 50  0001 C CNN
@@ -88,10 +88,10 @@ F 3 "~" H 2500 1750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR0301
 U 1 1 5E56D6B1
 P 2800 2100
-F 0 "#PWR?" H 2800 1850 50  0001 C CNN
+F 0 "#PWR0301" H 2800 1850 50  0001 C CNN
 F 1 "Earth" H 2800 1950 50  0001 C CNN
 F 2 "" H 2800 2100 50  0001 C CNN
 F 3 "~" H 2800 2100 50  0001 C CNN
@@ -99,10 +99,10 @@ F 3 "~" H 2800 2100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+12V #PWR?
+L power:+12V #PWR0303
 U 1 1 5E56DCE9
 P 3150 1550
-F 0 "#PWR?" H 3150 1400 50  0001 C CNN
+F 0 "#PWR0303" H 3150 1400 50  0001 C CNN
 F 1 "+12V" H 3165 1723 50  0000 C CNN
 F 2 "" H 3150 1550 50  0001 C CNN
 F 3 "" H 3150 1550 50  0001 C CNN
@@ -110,10 +110,10 @@ F 3 "" H 3150 1550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:-12V #PWR?
+L power:-12V #PWR0304
 U 1 1 5E56E042
 P 3150 2150
-F 0 "#PWR?" H 3150 2250 50  0001 C CNN
+F 0 "#PWR0304" H 3150 2250 50  0001 C CNN
 F 1 "-12V" H 3165 2323 50  0000 C CNN
 F 2 "" H 3150 2150 50  0001 C CNN
 F 3 "" H 3150 2150 50  0001 C CNN
@@ -145,10 +145,10 @@ Wire Wire Line
 Wire Wire Line
 	3100 1200 2800 1200
 $Comp
-L Device:R_US R?
+L Device:R_US R304
 U 1 1 5E59192E
 P 3250 3700
-F 0 "R?" V 3045 3700 50  0000 C CNN
+F 0 "R304" V 3045 3700 50  0000 C CNN
 F 1 "1k" V 3136 3700 50  0000 C CNN
 F 2 "" V 3290 3690 50  0001 C CNN
 F 3 "~" H 3250 3700 50  0001 C CNN
@@ -156,10 +156,10 @@ F 3 "~" H 3250 3700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_US R?
+L Device:R_US R302
 U 1 1 5E591938
 P 2500 4250
-F 0 "R?" V 2295 4250 50  0000 C CNN
+F 0 "R302" V 2295 4250 50  0000 C CNN
 F 1 "4k" V 2386 4250 50  0000 C CNN
 F 2 "" V 2540 4240 50  0001 C CNN
 F 3 "~" H 2500 4250 50  0001 C CNN
@@ -167,10 +167,10 @@ F 3 "~" H 2500 4250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR0302
 U 1 1 5E591942
 P 2800 4600
-F 0 "#PWR?" H 2800 4350 50  0001 C CNN
+F 0 "#PWR0302" H 2800 4350 50  0001 C CNN
 F 1 "Earth" H 2800 4450 50  0001 C CNN
 F 2 "" H 2800 4600 50  0001 C CNN
 F 3 "~" H 2800 4600 50  0001 C CNN
@@ -178,10 +178,10 @@ F 3 "~" H 2800 4600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+12V #PWR?
+L power:+12V #PWR0305
 U 1 1 5E59194C
 P 3150 4050
-F 0 "#PWR?" H 3150 3900 50  0001 C CNN
+F 0 "#PWR0305" H 3150 3900 50  0001 C CNN
 F 1 "+12V" H 3165 4223 50  0000 C CNN
 F 2 "" H 3150 4050 50  0001 C CNN
 F 3 "" H 3150 4050 50  0001 C CNN
@@ -189,10 +189,10 @@ F 3 "" H 3150 4050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:-12V #PWR?
+L power:-12V #PWR0306
 U 1 1 5E591956
 P 3150 4650
-F 0 "#PWR?" H 3150 4750 50  0001 C CNN
+F 0 "#PWR0306" H 3150 4750 50  0001 C CNN
 F 1 "-12V" H 3165 4823 50  0000 C CNN
 F 2 "" H 3150 4650 50  0001 C CNN
 F 3 "" H 3150 4650 50  0001 C CNN
@@ -232,10 +232,10 @@ InSteppedDown2
 Text HLabel 8800 5700 2    50   Input ~ 0
 FBSteppedDown2
 $Comp
-L Amplifier_Operational:TL072 U?
+L Amplifier_Operational:TL072 U301
 U 1 1 5E5F6235
 P 8150 3200
-F 0 "U?" H 8250 2950 50  0000 C CNN
+F 0 "U301" H 8250 2950 50  0000 C CNN
 F 1 "TL072" H 8250 3050 50  0000 C CNN
 F 2 "" H 8150 3200 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 8150 3200 50  0001 C CNN
@@ -243,10 +243,10 @@ F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 8150 3200 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L Amplifier_Operational:TL072 U?
+L Amplifier_Operational:TL072 U301
 U 2 1 5E5F623F
 P 8150 5700
-F 0 "U?" H 8250 5450 50  0000 C CNN
+F 0 "U301" H 8250 5450 50  0000 C CNN
 F 1 "TL072" H 8250 5550 50  0000 C CNN
 F 2 "" H 8150 5700 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 8150 5700 50  0001 C CNN
@@ -254,10 +254,10 @@ F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 8150 5700 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L Amplifier_Operational:TL072 U?
+L Amplifier_Operational:TL072 U304
 U 3 1 5E5F6249
 P 8150 5700
-F 0 "U?" H 8200 5550 50  0000 L CNN
+F 0 "U304" H 8200 5550 50  0000 L CNN
 F 1 "TL072" H 8150 5450 50  0000 L CNN
 F 2 "" H 8150 5700 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 8150 5700 50  0001 C CNN
@@ -265,10 +265,10 @@ F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 8150 5700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Amplifier_Operational:TL072 U?
+L Amplifier_Operational:TL072 U303
 U 3 1 5E5F6253
 P 8150 3200
-F 0 "U?" H 8200 3050 50  0000 L CNN
+F 0 "U303" H 8200 3050 50  0000 L CNN
 F 1 "TL072" H 8150 2950 50  0000 L CNN
 F 2 "" H 8150 3200 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 8150 3200 50  0001 C CNN
@@ -276,10 +276,10 @@ F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 8150 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_US R?
+L Device:R_US R307
 U 1 1 5E5F625D
 P 8150 2550
-F 0 "R?" V 7945 2550 50  0000 C CNN
+F 0 "R307" V 7945 2550 50  0000 C CNN
 F 1 "1k" V 8036 2550 50  0000 C CNN
 F 2 "" V 8190 2540 50  0001 C CNN
 F 3 "~" H 8150 2550 50  0001 C CNN
@@ -287,10 +287,10 @@ F 3 "~" H 8150 2550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_US R?
+L Device:R_US R305
 U 1 1 5E5F6267
 P 7400 3100
-F 0 "R?" V 7195 3100 50  0000 C CNN
+F 0 "R305" V 7195 3100 50  0000 C CNN
 F 1 "4k" V 7286 3100 50  0000 C CNN
 F 2 "" V 7440 3090 50  0001 C CNN
 F 3 "~" H 7400 3100 50  0001 C CNN
@@ -298,10 +298,10 @@ F 3 "~" H 7400 3100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR0307
 U 1 1 5E5F6271
 P 7700 3450
-F 0 "#PWR?" H 7700 3200 50  0001 C CNN
+F 0 "#PWR0307" H 7700 3200 50  0001 C CNN
 F 1 "Earth" H 7700 3300 50  0001 C CNN
 F 2 "" H 7700 3450 50  0001 C CNN
 F 3 "~" H 7700 3450 50  0001 C CNN
@@ -309,10 +309,10 @@ F 3 "~" H 7700 3450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+12V #PWR?
+L power:+12V #PWR0309
 U 1 1 5E5F627B
 P 8050 2900
-F 0 "#PWR?" H 8050 2750 50  0001 C CNN
+F 0 "#PWR0309" H 8050 2750 50  0001 C CNN
 F 1 "+12V" H 8065 3073 50  0000 C CNN
 F 2 "" H 8050 2900 50  0001 C CNN
 F 3 "" H 8050 2900 50  0001 C CNN
@@ -320,10 +320,10 @@ F 3 "" H 8050 2900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:-12V #PWR?
+L power:-12V #PWR0310
 U 1 1 5E5F6285
 P 8050 3500
-F 0 "#PWR?" H 8050 3600 50  0001 C CNN
+F 0 "#PWR0310" H 8050 3600 50  0001 C CNN
 F 1 "-12V" H 8065 3673 50  0000 C CNN
 F 2 "" H 8050 3500 50  0001 C CNN
 F 3 "" H 8050 3500 50  0001 C CNN
@@ -355,10 +355,10 @@ Wire Wire Line
 Wire Wire Line
 	8000 2550 7700 2550
 $Comp
-L Device:R_US R?
+L Device:R_US R308
 U 1 1 5E5F629C
 P 8150 5050
-F 0 "R?" V 7945 5050 50  0000 C CNN
+F 0 "R308" V 7945 5050 50  0000 C CNN
 F 1 "1k" V 8036 5050 50  0000 C CNN
 F 2 "" V 8190 5040 50  0001 C CNN
 F 3 "~" H 8150 5050 50  0001 C CNN
@@ -366,10 +366,10 @@ F 3 "~" H 8150 5050 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_US R?
+L Device:R_US R306
 U 1 1 5E5F62A6
 P 7400 5600
-F 0 "R?" V 7195 5600 50  0000 C CNN
+F 0 "R306" V 7195 5600 50  0000 C CNN
 F 1 "4k" V 7286 5600 50  0000 C CNN
 F 2 "" V 7440 5590 50  0001 C CNN
 F 3 "~" H 7400 5600 50  0001 C CNN
@@ -377,10 +377,10 @@ F 3 "~" H 7400 5600 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR0308
 U 1 1 5E5F62B0
 P 7700 5950
-F 0 "#PWR?" H 7700 5700 50  0001 C CNN
+F 0 "#PWR0308" H 7700 5700 50  0001 C CNN
 F 1 "Earth" H 7700 5800 50  0001 C CNN
 F 2 "" H 7700 5950 50  0001 C CNN
 F 3 "~" H 7700 5950 50  0001 C CNN
@@ -388,10 +388,10 @@ F 3 "~" H 7700 5950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+12V #PWR?
+L power:+12V #PWR0311
 U 1 1 5E5F62BA
 P 8050 5400
-F 0 "#PWR?" H 8050 5250 50  0001 C CNN
+F 0 "#PWR0311" H 8050 5250 50  0001 C CNN
 F 1 "+12V" H 8065 5573 50  0000 C CNN
 F 2 "" H 8050 5400 50  0001 C CNN
 F 3 "" H 8050 5400 50  0001 C CNN
@@ -399,10 +399,10 @@ F 3 "" H 8050 5400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:-12V #PWR?
+L power:-12V #PWR0312
 U 1 1 5E5F62C4
 P 8050 6000
-F 0 "#PWR?" H 8050 6100 50  0001 C CNN
+F 0 "#PWR0312" H 8050 6100 50  0001 C CNN
 F 1 "-12V" H 8065 6173 50  0000 C CNN
 F 2 "" H 8050 6000 50  0001 C CNN
 F 3 "" H 8050 6000 50  0001 C CNN

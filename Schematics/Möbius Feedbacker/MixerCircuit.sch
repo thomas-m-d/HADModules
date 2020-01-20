@@ -20,9 +20,11 @@ FBVCA1
 Text HLabel 5000 2450 2    50   Input ~ 0
 Output1
 $Comp
-L power:+12V #PWR?
+L power:+12V #PWR0202
 U 1 1 5E3F8D2B
 P 4100 2150
+AR Path="/5E3F1FBB/5E3F8D2B" Ref="#PWR0202"  Part="1" 
+AR Path="/5E26B18F/5E3F8D2B" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 4100 2000 50  0001 C CNN
 F 1 "+12V" H 4115 2323 50  0000 C CNN
 F 2 "" H 4100 2150 50  0001 C CNN
@@ -31,9 +33,11 @@ F 3 "" H 4100 2150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:-12V #PWR?
+L power:-12V #PWR0203
 U 1 1 5E3F9114
 P 4100 2750
+AR Path="/5E3F1FBB/5E3F9114" Ref="#PWR0203"  Part="1" 
+AR Path="/5E26B18F/5E3F9114" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 4100 2850 50  0001 C CNN
 F 1 "-12V" H 4115 2923 50  0000 C CNN
 F 2 "" H 4100 2750 50  0001 C CNN
@@ -42,9 +46,11 @@ F 3 "" H 4100 2750 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R_US R?
+L Device:R_US R203
 U 1 1 5E3F9703
 P 4200 1750
+AR Path="/5E3F1FBB/5E3F9703" Ref="R203"  Part="1" 
+AR Path="/5E26B18F/5E3F9703" Ref="R?"  Part="1" 
 F 0 "R?" V 3995 1750 50  0000 C CNN
 F 1 "800" V 4086 1750 50  0000 C CNN
 F 2 "" V 4240 1740 50  0001 C CNN
@@ -53,9 +59,11 @@ F 3 "~" H 4200 1750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_US R?
+L Device:R_US R202
 U 1 1 5E3FCDD0
 P 3000 2350
+AR Path="/5E3F1FBB/5E3FCDD0" Ref="R202"  Part="1" 
+AR Path="/5E26B18F/5E3FCDD0" Ref="R?"  Part="1" 
 F 0 "R?" V 3100 2350 50  0000 C CNN
 F 1 "1k" V 3200 2350 50  0000 C CNN
 F 2 "" V 3040 2340 50  0001 C CNN
@@ -64,9 +72,11 @@ F 3 "~" H 3000 2350 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_US R?
+L Device:R_US R201
 U 1 1 5E3FD843
 P 3000 2100
+AR Path="/5E3F1FBB/5E3FD843" Ref="R201"  Part="1" 
+AR Path="/5E26B18F/5E3FD843" Ref="R?"  Part="1" 
 F 0 "R?" V 2795 2100 50  0000 C CNN
 F 1 "1k" V 2886 2100 50  0000 C CNN
 F 2 "" V 3040 2090 50  0001 C CNN
@@ -77,9 +87,11 @@ $EndComp
 Wire Wire Line
 	3150 2100 3350 2100
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR0201
 U 1 1 5E400D21
 P 3800 2650
+AR Path="/5E3F1FBB/5E400D21" Ref="#PWR0201"  Part="1" 
+AR Path="/5E26B18F/5E400D21" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 3800 2400 50  0001 C CNN
 F 1 "Earth" H 3800 2500 50  0001 C CNN
 F 2 "" H 3800 2650 50  0001 C CNN
@@ -90,9 +102,11 @@ $EndComp
 Wire Wire Line
 	3800 2650 3800 2550
 $Comp
-L Amplifier_Operational:TL072 U?
+L Amplifier_Operational:TL072 U201
 U 1 1 5E3F2EDF
 P 4200 2450
+AR Path="/5E3F1FBB/5E3F2EDF" Ref="U201"  Part="1" 
+AR Path="/5E26B18F/5E3F2EDF" Ref="U?"  Part="1" 
 F 0 "U?" H 4300 2300 50  0000 C CNN
 F 1 "TL072" H 4300 2200 50  0000 C CNN
 F 2 "" H 4200 2450 50  0001 C CNN
@@ -101,9 +115,11 @@ F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 4200 2450 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L Amplifier_Operational:TL072 U?
+L Amplifier_Operational:TL072 U201
 U 3 1 5E3F3656
 P 4200 2450
+AR Path="/5E3F1FBB/5E3F3656" Ref="U201"  Part="3" 
+AR Path="/5E26B18F/5E3F3656" Ref="U?"  Part="3" 
 F 0 "U?" H 4250 2300 50  0000 L CNN
 F 1 "TL072" H 4200 2200 50  0000 L CNN
 F 2 "" H 4200 2450 50  0001 C CNN
@@ -131,9 +147,11 @@ Wire Wire Line
 	5000 2450 4700 2450
 Connection ~ 4700 2450
 $Comp
-L power:+12V #PWR?
+L power:+12V #PWR0205
 U 1 1 5E41E785
 P 8450 4850
+AR Path="/5E3F1FBB/5E41E785" Ref="#PWR0205"  Part="1" 
+AR Path="/5E26B18F/5E41E785" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 8450 4700 50  0001 C CNN
 F 1 "+12V" H 8465 5023 50  0000 C CNN
 F 2 "" H 8450 4850 50  0001 C CNN
@@ -142,9 +160,11 @@ F 3 "" H 8450 4850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:-12V #PWR?
+L power:-12V #PWR0206
 U 1 1 5E41E78F
 P 8450 5450
+AR Path="/5E3F1FBB/5E41E78F" Ref="#PWR0206"  Part="1" 
+AR Path="/5E26B18F/5E41E78F" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 8450 5550 50  0001 C CNN
 F 1 "-12V" H 8465 5623 50  0000 C CNN
 F 2 "" H 8450 5450 50  0001 C CNN
@@ -153,9 +173,11 @@ F 3 "" H 8450 5450 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R_US R?
+L Device:R_US R206
 U 1 1 5E41E799
 P 8550 4450
+AR Path="/5E3F1FBB/5E41E799" Ref="R206"  Part="1" 
+AR Path="/5E26B18F/5E41E799" Ref="R?"  Part="1" 
 F 0 "R?" V 8345 4450 50  0000 C CNN
 F 1 "800" V 8436 4450 50  0000 C CNN
 F 2 "" V 8590 4440 50  0001 C CNN
@@ -164,9 +186,11 @@ F 3 "~" H 8550 4450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_US R?
+L Device:R_US R205
 U 1 1 5E41E7A3
 P 7350 5050
+AR Path="/5E3F1FBB/5E41E7A3" Ref="R205"  Part="1" 
+AR Path="/5E26B18F/5E41E7A3" Ref="R?"  Part="1" 
 F 0 "R?" V 7450 5050 50  0000 C CNN
 F 1 "1k" V 7550 5050 50  0000 C CNN
 F 2 "" V 7390 5040 50  0001 C CNN
@@ -175,9 +199,11 @@ F 3 "~" H 7350 5050 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_US R?
+L Device:R_US R204
 U 1 1 5E41E7AD
 P 7350 4800
+AR Path="/5E3F1FBB/5E41E7AD" Ref="R204"  Part="1" 
+AR Path="/5E26B18F/5E41E7AD" Ref="R?"  Part="1" 
 F 0 "R?" V 7145 4800 50  0000 C CNN
 F 1 "1k" V 7236 4800 50  0000 C CNN
 F 2 "" V 7390 4790 50  0001 C CNN
@@ -190,9 +216,11 @@ Wire Wire Line
 Wire Wire Line
 	7500 4800 7700 4800
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR0204
 U 1 1 5E41E7BA
 P 8150 5350
+AR Path="/5E3F1FBB/5E41E7BA" Ref="#PWR0204"  Part="1" 
+AR Path="/5E26B18F/5E41E7BA" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 8150 5100 50  0001 C CNN
 F 1 "Earth" H 8150 5200 50  0001 C CNN
 F 2 "" H 8150 5350 50  0001 C CNN
@@ -203,9 +231,11 @@ $EndComp
 Wire Wire Line
 	8150 5350 8150 5250
 $Comp
-L Amplifier_Operational:TL072 U?
+L Amplifier_Operational:TL072 U202
 U 3 1 5E41E7CF
 P 8550 5150
+AR Path="/5E3F1FBB/5E41E7CF" Ref="U202"  Part="3" 
+AR Path="/5E26B18F/5E41E7CF" Ref="U?"  Part="3" 
 F 0 "U?" H 8600 5000 50  0000 L CNN
 F 1 "TL072" H 8550 4900 50  0000 L CNN
 F 2 "" H 8550 5150 50  0001 C CNN
@@ -233,9 +263,11 @@ Wire Wire Line
 	9350 5150 9050 5150
 Connection ~ 9050 5150
 $Comp
-L Amplifier_Operational:TL072 U?
+L Amplifier_Operational:TL072 U201
 U 2 1 5E428A77
 P 8550 5150
+AR Path="/5E3F1FBB/5E428A77" Ref="U201"  Part="2" 
+AR Path="/5E26B18F/5E428A77" Ref="U?"  Part="2" 
 F 0 "U?" H 8550 4783 50  0000 C CNN
 F 1 "TL072" H 8550 4874 50  0000 C CNN
 F 2 "" H 8550 5150 50  0001 C CNN
