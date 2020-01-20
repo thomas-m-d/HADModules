@@ -13,6 +13,11 @@ found in the [SourceCode](https://github.com/thomas-m-d/HADModules/tree/master/S
 # Modules
 Resources for the following modules are included in this repo
 
+### Möbius
+Dual 2-channel voltage controlled mixer. Intended purpose is for feedback applications where a sound source is connected
+to channel-1 input, the output is connected to a filter/effect/etc. module, and the output of the filter/effect/etc. module
+is connected to channel-2 input.
+
 ### Mnemonic
 4 channel sampler module that lets you record short audio clips, trigger each channel individually, and play all 4
 channels back on a common output. 
